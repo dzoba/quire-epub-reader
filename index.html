@@ -1,0 +1,137 @@
+<!doctype html>
+<!-- Quire landing page. Static, no trackers, no external fonts or CDNs.
+     Images in img/ are produced by store/build.mjs (store/site.mjs) from the same captures as the store screenshots.
+     When the store listing is live: point the "#get" buttons at its URL. -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Quire – EPUB Reader for Chrome</title>
+<meta name="description" content="Open .epub links straight in Chrome. Search the whole book, bookmarks that stick, page or scroll mode, light, sepia and dark themes. Private: no tracking.">
+<meta property="og:title" content="Quire – EPUB Reader for Chrome">
+<meta property="og:description" content="Click an .epub link and start reading. Whole-book search, bookmarks that stick, page or scroll. No tracking.">
+<meta property="og:image" content="https://dzoba.github.io/quire-epub-reader/img/marquee-1400x560.png">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="img/icon32.png">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="top"><div class="wrap">
+  <a class="brand" href="#"><img src="img/icon128.png" alt="" width="32" height="32">Quire</a>
+  <nav><a href="#features">Features</a><a href="#privacy">Privacy</a><a href="#permissions">Permissions</a>
+    <a class="btn small" href="#get">Coming soon</a></nav>
+</div></header>
+
+<section class="hero">
+  <div class="wrap">
+    <h1>Click any .epub link. <em>It just opens.</em></h1>
+    <p class="lede">Quire is an EPUB reader that lives in Chrome. Links to books open straight in a clean reader,
+      with whole-book search, bookmarks that stay put, and page or scroll mode.</p>
+    <a class="btn" href="#get">Coming soon to the Chrome Web Store</a>
+    <div class="note">No account. No tracking. Your books stay on your computer.</div>
+  </div>
+  <img class="shot" src="img/light-spread.jpg" width="1600" height="1000"
+    alt="Pride and Prejudice open in Quire as a two-page spread, after clicking a link to pride-and-prejudice.epub">
+</section>
+
+<div class="fixes">
+  <div class="fix"><i></i><b>Opens .epub links</b><span>No download, no digging through your Downloads folder.</span></div>
+  <div class="fix"><i></i><b>Searches the whole book</b><span>Every chapter at once, with highlighted results.</span></div>
+  <div class="fix"><i></i><b>Bookmarks that stick</b><span>Close the tab, restart Chrome, come back to the same page.</span></div>
+  <div class="fix"><i></i><b>Page or scroll</b><span>Keep scrolling and the next chapter follows.</span></div>
+</div>
+
+<section class="features" id="features"><div class="wrap">
+  <div class="row">
+    <div class="copy">
+      <div class="eyebrow">Search</div>
+      <h2>Search the whole book in about a second</h2>
+      <p>Quire searches every chapter at once, not just the one you are on. Results are grouped by chapter with the match
+        highlighted, and Enter steps to the next one. All of Moby-Dick takes about a second.</p>
+      <ul><li><kbd>Ctrl</kbd>/<kbd>⌘</kbd>+<kbd>F</kbd> or <kbd>/</kbd> to search</li><li>Match case and whole-word options</li><li>Select text to search for it</li></ul>
+    </div>
+    <img src="img/search.jpg" width="1600" height="1000" loading="lazy"
+      alt="Searching Moby-Dick for “white whale”: 108 results grouped by chapter, highlighted on the page">
+  </div>
+  <div class="row">
+    <div class="copy">
+      <div class="eyebrow">Bookmarks</div>
+      <h2>Bookmarks that actually stick</h2>
+      <p>Your reading position is saved as you turn pages, and bookmarks are tied to the book itself. Close the tab,
+        restart Chrome or open the same file from somewhere else, and you are back where you were.</p>
+      <ul><li><kbd>B</kbd> to bookmark, <kbd>Shift</kbd>+<kbd>B</kbd> for the list</li><li>Each bookmark shows its chapter and an excerpt</li></ul>
+    </div>
+    <img src="img/bookmarks-sepia.jpg" width="1600" height="1000" loading="lazy"
+      alt="Alice's Adventures in Wonderland in the sepia theme with a list of six bookmarks">
+  </div>
+  <div class="row">
+    <div class="copy">
+      <div class="eyebrow">Reading</div>
+      <h2>Page or scroll. Light, sepia or dark.</h2>
+      <p>Read in pages, one or two columns depending on your window, or switch to scroll mode, where the next chapter
+        follows when you reach the end of this one.</p>
+      <ul><li>Font, size, line spacing and page width</li><li>Justified or ragged text</li><li><kbd>M</kbd> toggles pages/scroll, <kbd>D</kbd> cycles themes</li></ul>
+    </div>
+    <img src="img/dark-scroll-settings.jpg" width="1600" height="1000" loading="lazy"
+      alt="Frankenstein in the dark theme and scroll mode with the appearance panel open">
+  </div>
+</div></section>
+
+<section class="dark" id="privacy"><div class="wrap cols">
+  <div>
+    <h2>Private. <em>Your books stay on your computer.</em></h2>
+    <p>Quire has no accounts, no analytics and no ads. The books you open, your bookmarks, reading positions and settings
+      are stored in this browser and nowhere else. The only thing Quire downloads is the book you clicked.</p>
+    <div class="cards">
+      <div class="card"><b>No account</b><span>Nothing to sign up for. Install it and read.</span></div>
+      <div class="card"><b>No tracking</b><span>No analytics, telemetry, crash reporting or ads.</span></div>
+      <div class="card"><b>Scripts in books are blocked</b><span>Book content runs in a sandbox, so code inside an EPUB does not run.</span></div>
+    </div>
+    <p style="margin-top:22px"><a href="privacy.html">Read the privacy policy</a></p>
+  </div>
+  <img src="img/library.jpg" width="1600" height="1000" loading="lazy" class="framed"
+    alt="The Quire library with six books, their covers and reading progress, stored in this browser">
+</div></section>
+
+<section class="dark" id="permissions" style="padding-top:0"><div class="wrap">
+  <h2 style="font-size:32px">Permissions, in plain words</h2>
+  <p>Chrome will show a warning when you install Quire. Here is what each permission is for.</p>
+  <div class="perm"><b><q>Read and change all your data on all websites</q></b>
+    <span>When you click a link to an EPUB, Quire needs to catch that navigation and fetch the book from whichever site
+      hosts it. A book can be on any site, so that takes access to all sites. Quire has no content scripts: it never reads or
+      changes the pages you visit. It only redirects links to EPUB files into its own reader.</span></div>
+  <div class="perm"><b><q>Manage your downloads</q> (optional, off unless you turn it on)</b>
+    <span>Lets Quire open EPUB files that a site forces to download, and .epub files you drag onto Chrome. Other
+      downloads are left alone.</span></div>
+  <div class="perm"><b>Storage and the right-click menu</b>
+    <span>Saves your settings, bookmarks and positions locally, and adds “Open link in Quire EPUB Reader” to the
+      menu for links.</span></div>
+</div></section>
+
+<section class="more"><div class="wrap">
+  <h2>Also in the box</h2>
+  <div class="grid">
+    <div><b>Table of contents</b><span>With the current chapter highlighted.</span></div>
+    <div><b>Read aloud</b><span>Uses your computer's built-in voices and highlights the paragraph being read.</span></div>
+    <div><b>A library of your books</b><span>Covers and progress. Books reopen without the original file.</span></div>
+    <div><b>Keyboard shortcuts</b><span>Arrows to turn pages, <kbd>T</kbd> for contents, <kbd>?</kbd> for the full list.</span></div>
+    <div><b>Local files too</b><span>Drop an EPUB on the library or pick one from your computer.</span></div>
+    <div><b>Clear error messages</b><span>A damaged or non-EPUB file gets an explanation, not a blank page.</span></div>
+  </div>
+</div></section>
+
+<section class="cta"><div class="wrap">
+  <h2>Start reading in Chrome</h2>
+  <a class="btn" href="#get">Coming soon to the Chrome Web Store</a>
+</div></section>
+
+<footer class="foot"><div class="wrap">
+  <span>Quire EPUB Reader for Chrome · Works with EPUB 2 and EPUB 3</span>
+  <span><a href="privacy.html">Privacy policy</a> · <a href="https://github.com/dzoba/quire-epub-reader/issues">Contact</a></span>
+  <span>Books shown in screenshots are public-domain texts.</span>
+</div></footer>
+
+</body>
+</html>
